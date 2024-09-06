@@ -18,7 +18,7 @@
 
     <div class="tabs">   <!--page address-->
         <a href="#"><button class="tab-btn">Dashboard</button></a>
-        <a href="index.html"><button class="tab-btn active-tab">My Profile</button></a>
+        <a href="My_Profile.html"><button class="tab-btn active-tab">My Profile</button></a>
         <a href="#"><button class="tab-btn">My Projects</button></a>
     </div>
 
@@ -39,12 +39,12 @@
         
                 <label for="project-name">Project Name</label>
                 <input type="text" id="project-name" placeholder="Project name">
-                
-            <label >Categories</label>
+            
                 
             </div>
         
             <div class="right-column">
+                
                 <label for="work-experience">Work Experience?</label>
                 <textarea id="work-experience" placeholder="Add certification and qualification..."></textarea>
                 <br><br><br><br>
@@ -59,25 +59,33 @@
             </div>
         </div>
         
-        <div class="checkbox-group">
-            <label><input type="checkbox" name="category"> Mobile Application</label>
             
-            <label><input type="checkbox" name="category"> Website Application</label>
-            <label><input type="checkbox" name="category"> Source Code</label>
-            <label><input type="checkbox" name="category"> I.P</label>
-            <label><input type="checkbox" name="category"> Other</label>
+        <div class="container">
+            <div class="categories">
+                <div class="label-title">Categories</div>
+                <div class="categories-section">
+                    <label><input type="checkbox" name="category"> Mobile Application</label>
+                    <label><input type="checkbox" name="category"> Website Application</label>
+                    <label><input type="checkbox" name="category"> Source Code</label>
+                    <label><input type="checkbox" name="category"> I.P</label>
+                    <label><input type="checkbox" name="category"> Other</label>
+                </div>
+            </div>
+            <div class="social-login" >
+                <button id="googleSignIn" class="social-btn google"><img src="Google__G__logo.png" width="12%"> Login with Google</button>
+                <span>&nbsp; OR &nbsp;</span>
+                <button id="facebookSignIn" class="social-btn facebook"><img src="Facebook-Logosu.png" width="21%"> Login with Facebook</button>
+            </div>
+        
+            <button class="update-button">Update</button>
         </div>
-        <div class="social-login" >
-            <button id="googleSignIn" class="social-btn google"><img src="Google__G__logo.png" width="12%"> Login with Google</button>
-            <span>&nbsp; OR &nbsp;</span>
-            <button id="facebookSignIn" class="social-btn facebook"><img src="Facebook-Logosu.png" width="21%"> Login with Facebook</button>
-        </div>
+        
         
         
         <!-- Update Button at the bottom of the container -->
-        <div class="update-button-container">
+        <!-- <div class="update-button-container">
             <button type="submit" class="update-button">Update</button>
-        </div>
+        </div> -->
     </form>
 
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
