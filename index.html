@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Seaport - My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>   <!--page address-->
+                <li><a href="#">Home</a></li> 
+                <li><a href="#" class="active">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="tabs">   <!--page address-->
+        <a href="#"><button class="tab-btn">Dashboard</button></a>
+        <a href="MY_Profile.html"><button class="tab-btn active-tab">My Profile</button></a>
+        <a href="#"><button class="tab-btn">My Projects</button></a>
+    </div>
+
+    <form class="profile-form">
+        <div class="profile-form">
+            <div class="left-column">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@company.com" required>
+        
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" placeholder="+91 55555-00005" required>
+        
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="House no" required>
+        
+                <label for="project-name">Project Name</label>
+                <input type="text" id="project-name" placeholder="Project name">
+                
+            <label >Categories</label>
+                
+            </div>
+        
+            <div class="right-column">
+                <label for="work-experience">Work Experience?</label>
+                <textarea id="work-experience" placeholder="Add certification and qualification..."></textarea>
+                <br><br><br><br>
+        
+                <label for="password">Your password</label>
+                <input type="password" id="password" required>
+        
+                <label for="confirm-password">Confirm password</label>
+                <input type="password" id="confirm-password" required>
+        
+                
+            </div>
+        </div>
+        
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="category"> Mobile Application</label>
+            
+            <label><input type="checkbox" name="category"> Website Application</label>
+            <label><input type="checkbox" name="category"> Source Code</label>
+            <label><input type="checkbox" name="category"> I.P</label>
+            <label><input type="checkbox" name="category"> Other</label>
+        </div>
+        <div class="social-login" >
+            <button id="googleSignIn" class="social-btn google"><img src="Google__G__logo.png" width="12%"> Login with Google</button>
+            <span>&nbsp; OR &nbsp;</span>
+            <button id="facebookSignIn" class="social-btn facebook"><img src="Facebook-Logosu.png" width="21%"> Login with Facebook</button>
+        </div>
+        
+        
+        <!-- Update Button at the bottom of the container -->
+        <div class="update-button-container">
+            <button type="submit" class="update-button">Update</button>
+        </div>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
