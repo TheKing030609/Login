@@ -120,10 +120,10 @@ textarea {
 
 /* Categories checkboxes aligned in one row */
 .label-title{
-    margin-left: 120px;
+    margin-left: 18%;
 }
 .categories-section {
-    margin-left: 120px;
+    margin-left: 18%;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -154,7 +154,7 @@ textarea {
     width: 444px;
     display: block;
     margin: 20px auto;
-    margin-left: 410px;
+    margin-left: 53.4%;
     padding: 10px 20px;
     background-color: #6A1B9A;
     color: white;
@@ -172,8 +172,8 @@ textarea {
 .social-login {
     text-align: center;
     margin-top: 12px;
-    margin-left: 410px;
-    width: 100%;
+    margin-left: 510px;
+    align-items: center;
     display: flex;
     flex-direction: row;
 
